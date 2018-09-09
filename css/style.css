@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Serif;
+    font-family: 'Lato', Helvetica, Arial, Verdana;
     background-color: #ffffff;
     overflow-x: hidden;
 }
@@ -114,7 +114,8 @@ body {
     margin-left: 50px;
 }
 
-input[type=button] {
+/* Este es el boton de English */
+input[class=english] {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -129,13 +130,14 @@ input[type=button] {
     transition: .5s;
 }
 
-input[type=button]:hover {
+input[class=english]:hover {
     background-color: #3c98ee;
     color: white;
     transition: .5s;
     text-shadow: 1px 1px 2px black;
 }
 
+/* esta transicion se requiere para que el menu responsivo empuje todo a la derecha al abrirse */
 #main {
     transition: margin-left 0.5s;
     padding: 0px;
@@ -143,6 +145,7 @@ input[type=button]:hover {
     width: 100%;
 }
 
+/* esto contiene el image slider */
 .container {
     margin: 0;
     margin-top: 0px;
@@ -173,6 +176,7 @@ input[type=button]:hover {
     object-fit: none;
 }
 
+/* estos son los radio selectors del slider */
 #i1, #i2, #i3 {
     display: none;
 }
@@ -205,6 +209,7 @@ input[type=button]:hover {
     z-index: 99;
 }
 
+/* Los puntos inferiores del image slider */
 .dots {
     top: -10px;
     width: 10px;
@@ -233,6 +238,7 @@ input[type=button]:hover {
     border: 1px solid rgba(0, 0, 0, 0.33);
 }
 
+/* las flechas que todavia no funcionan como links porque son divs */
 .arrows {
    width: 20px;
    height: 20px;
@@ -261,6 +267,55 @@ input[type=button]:hover {
    z-index: 99;
 }
 
+.doctordescription {
+    width: 1125px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.doctordescription h1 {
+    font-size: 250%;
+    padding-top: 75px;
+    color: #77b9f8;
+}
+
+.doctordescription h2 {
+    font-size: 150%;
+    color: #898989;
+}
+
+.doctordescription p {
+    color: #898989;
+    padding-top: 60px;
+    margin-right: 50px;
+}
+
+input[class=vermas] {
+    position: relative;
+    font-size: 15px;
+    top: 0px;
+    right: 0px;
+    height: 63px;
+    color: #68b2f8;
+    background-color: white;
+    border: 2px solid #68b2f8;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin: 60px 0 0 0;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 30px;
+    float: right;
+    margin-right: 200px;
+}
+
+input[class=vermas]:hover {
+    background-color: #3c98ee;
+    color: white;
+    transition: .5s;
+    /* text-shadow: 1px 1px 2px black; */
+}
+
 @media(max-width:1155px){
     .navbar-nav{display: none;}
     .logomcg    {
@@ -274,6 +329,29 @@ input[type=button]:hover {
         max-width: inherit;
         object-fit: cover;
     }
+    .doctordescription {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .doctordescription h1 {
+        font-size: 180%;
+        padding-top: 50px;
+        color: #77b9f8;
+        padding: 30px 0 0 50px;
+    }
+    
+    .doctordescription h2 {
+        font-size: 120%;
+        color: #898989;
+        padding: 0 0 0 50px;
+    }
+    
+    .doctordescription p {
+        color: #898989;
+        padding: 30px 50px 0px 50px;
+    }
 }
 
 @media(min-width:1155px){
@@ -284,5 +362,41 @@ input[type=button]:hover {
     .logomcg    {
         padding: 22px 0 0 0;
         width: 240px;
+    }
+    .doctordescription h1 {
+        font-size: 180%;
+        padding-top: 50px;
+        color: #77b9f8;
+        padding: 30px 0 0 10px;
+    }
+    
+    .doctordescription h2 {
+        font-size: 120%;
+        color: #898989;
+        padding: 0 0 0 10px;
+    }
+    
+    .doctordescription p {
+        color: #898989;
+        padding: 30px 10px 0px 10px;
+    }
+
+    input[class=vermas] {
+        position: relative;
+        font-size: 15px;
+        top: 0px;
+        right: 0px;
+        height: 63px;
+        color: #68b2f8;
+        background-color: white;
+        border: 2px solid #68b2f8;
+        padding: 10px 30px;
+        text-decoration: none;
+        margin: 60px 0 0 0;
+        cursor: pointer;
+        transition: .5s;
+        border-radius: 30px;
+        float: right;
+        margin-right: 50px;
     }
 }

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
     </head>
     <body>
             <nav class="navbar">
@@ -26,7 +27,7 @@
                         <li><a href="#">Galería</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
-                    <input type="button" value="ENGLISH">
+                    <input type="button" class="english" value="ENGLISH">
                 </nav>
         
                 <div id="side-menu" class="side-nav">
@@ -82,10 +83,16 @@
                     </div>
 
                 </div>
+
+    <div class="doctordescription">
+        <h1>Dr. Mario Carranza García</h1>
+        <h2>Cirujano Plástico y Reconstructivo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita soluta voluptas et. Laborum sapiente veritatis laboriosam temporibus adipisci dolorum veniam provident, eaque quas, autem esse maiores aut sequi, voluptates aliquam!</p>
+        <input type="button" class="vermas" value="Ver más...">
+    </div>
+<!-- este es el main div, todo arriba de esto. -->
 </div>
                 </body>
-                
-        
                 <script>
                     function OpenSlideMenu(){
                         document.getElementById('side-menu').style.width = '250px';
@@ -96,7 +103,6 @@
                         document.getElementById('side-menu').style.width = '0px';
                         document.getElementById('main').style.marginLeft = '0px';
                     }
-                
                 </script>
     </body>
 </html>
