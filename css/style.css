@@ -19,9 +19,9 @@ body {
 }
 
 .logomcg {
-    width: 500px;
+    width: 400px;
     float: left;
-    padding: 16px 0 0 50px;
+    padding: 20px 0 0 50px;
     transition: 1s;
 }
 
@@ -31,9 +31,9 @@ body {
     display: block;
     color: #888888;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 /* Lista no ordenada de links */
@@ -44,8 +44,33 @@ body {
 
 /* Mouseover links */
 .navbar a:hover {
+    /* background-color: #ddd;
+    color: #68b2f8; */
+    /* text-decoration: underline; */
+    /* text-underline-position: under; */
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(221, 221, 221, 0.146);
+    color: #68b2f8;
+    text-decoration: underline;
+    border-radius: 50%;
+    box-shadow: 10 10 10 10 black;
+    backface-visibility: hidden;
+    transition: 1s;
+    text-shadow: 1px 1px 2px white;
+    /* border-bottom: dashed 1px rgba(0, 0, 0, 0.515); */
+}
+
+.underlined_text {
+    border-bottom: solid 1px #000;
+    display: inline;
+    padding-bottom: 3px;
+}
+
+.hamburger:hover {
     background-color: #ddd;
-    color: #000;
+    transition: .2s;
 }
 
 /* Lista de links */
@@ -78,6 +103,7 @@ body {
 
 .side-nav a:hover {
     color: #fff;
+    text-decoration: underline;
 }
 
 .side-nav .btn-close {
@@ -100,40 +126,51 @@ input[type=button] {
     text-decoration: none;
     margin: 0px;
     cursor: pointer;
+    transition: .5s;
 }
 
 input[type=button]:hover {
     background-color: #3c98ee;
     color: white;
+    transition: .5s;
+    text-shadow: 1px 1px 2px black;
 }
 
 #main {
-    transition:margin-left 0.5s;
-    padding: 20px;
+    transition: margin-left 0.5s;
+    padding: 0px;
     overflow: hidden;
     width: 100%;
 }
 
 .container {
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 0;
+    margin-top: 0px;
     position: relative;
-    width: 70%;
-    height: 0;
-    padding-bottom: 40%;
+    width: 100vw;
+    height: 510px;
+    max-height: 510px;
+    padding-bottom: 0%;
     background: #4c4c4c;
-    border: solid 10px #2c2c2c;
+    border: none;
 }
 
 .slide_img {
     position: absolute;
     width: 100%;
     height: 100%;
+    max-height: inherit;
+    max-width: inherit;
+    object-fit: cover;
 }
 
+/* Esta es la propiedad que cambia el tama;o de la imagen con el resize del browser. */
 .slide_img img {
     width: 100%;
     height: 100%;
+    max-height: inherit;
+    max-width: inherit;
+    object-fit: none;
 }
 
 #i1, #i2, #i3 {
@@ -141,11 +178,12 @@ input[type=button]:hover {
 }
 
 .pre, .nxt {
-    width: 12%;
+    width: 50%;
     height: 100%;
+    align-content: center;
     position: absolute;
     top: 0;
-    background: grey;
+    background: transparent;
     z-index: 99;
     cursor: pointer;
 }
@@ -160,22 +198,22 @@ input[type=button]:hover {
 
 .slidernav {
     width: 100%;
-    height: 11px;
-    bottom: 12%;
+    height: 10px;
+    bottom: 2%;
     position: absolute;
     text-align: center;
     z-index: 99;
 }
 
 .dots {
-    top: -5px;
-    width: 18px;
-    height: 18px;
+    top: -10px;
+    width: 10px;
+    height: 10px;
     margin: 0 4px;
     position: relative;
     border-radius: 50%;
     display: inline-block;
-    background: rgba(128, 128, 128, 0.673);
+    background: rgba(67, 67, 67, 0.666);
 }
 
 .slide_img {
@@ -192,13 +230,49 @@ input[type=button]:hover {
 #i2:checked ~ .slidernav #dot2,
 #i3:checked ~ .slidernav #dot3{
     background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.33);
+}
+
+.arrows {
+   width: 20px;
+   height: 20px;
+   border-color: rgb(0, 0, 0);
+   position: absolute;
+   top: 50%;
+   margin-top: -31px;
+   align-content: center;
+   z-index: 99;
+   cursor: pointer;
+}
+
+.prev {
+   border-bottom: 6px solid #68b2f8;
+   border-left: 6px solid #68b2f8;
+   transform: rotate(45deg);
+   left: 15px;
+   z-index: 99;
+}
+
+.next {
+   border-bottom: 6px solid #68b2f8;
+   border-left: 6px solid #68b2f8;
+   transform: rotate(-135deg);
+   right: 15px;
+   z-index: 99;
 }
 
 @media(max-width:1155px){
     .navbar-nav{display: none;}
     .logomcg    {
-        padding: 16px 0 0 0;
+        padding: 18px 0 0 0;
         width: 400px;
+    }
+    .slide_img img {
+        width: 100%;
+        height: 100%;
+        max-height: inherit;
+        max-width: inherit;
+        object-fit: cover;
     }
 }
 
