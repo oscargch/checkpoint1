@@ -329,7 +329,7 @@ input[class=vermas]:hover {
     margin-left: auto;
     margin-right: auto;
     background-color:#f6f6f6;
-    height: 1000px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -356,27 +356,122 @@ input[class=vermas]:hover {
 .procedurestext p {
     font-size: 120%;
     padding-top: 0;
+    margin-bottom: 50px;
     text-align: center;
 }
 
-.proceduresimages {
+.proceduresimagesdiv {
+    width: 1125px;
+    max-width: 1125px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.pic1 {
+    height: 300px;
+    width: 540px;
+    flex:1;
+    margin-top: 0px;
+    margin-bottom: 20px;x;
+}
+
+.pic2 {
+    height: 300px;
+    width: 540px;
+    flex:1;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.pic3 {
+    height: 300px;
+    width: 540px;
+    flex:1;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.pic4 {
+    height: 300px;
+    width: 540px;
+    flex:1;
+    margin-top: 0px;
+    margin-bottom: 20px; 
+}
+
+.src2 {
+    width: 535px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.src2:hover {
+    opacity: 0.7;
+}
+
+.certifications {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 550px;
+    overflow: hidden;
+}
+
+.certifications {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certxt {
     width: 1125px;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 0 50px 0;
+    padding: 30px;
 }
 
-.proceduresimages img {
-    width: 540px;
-    height: 300px;
-    object-fit: cover;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 100px 0px rgba(0, 0, 0, 0.07);
+.certifications h1 {
+    font-size: 250%;
+    padding-top: 75px;
+    color: #77b9f8;
 }
 
-.proceduresimages img:hover {
-    opacity: 0.5;
+.certifications h2 {
+    font-size: 180%;
+    color: #898989;
+}
+
+.certifications p {
+    color: #898989;
+    padding-top: 60px;
+    margin-right: 50px;
+    font-size: 21px;
+    letter-spacing: 0.01em;
+}
+
+.map {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    height: 360px;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 370px;
+    overflow: hidden;
 }
 
 @media(max-width:1155px){
@@ -414,6 +509,42 @@ input[class=vermas]:hover {
     .doctordescription p {
         color: #898989;
         padding: 30px 50px 0px 50px;
+    }
+
+    .proceduresimagesdiv {
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .certxt {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px;
+    }
+    
+    .certifications h1 {
+        font-size: 250%;
+        padding-top: 75px;
+        color: #77b9f8;
+    }
+    
+    .certifications h2 {
+        font-size: 180%;
+        color: #898989;
+    }
+    
+    .certifications p {
+        color: #898989;
+        padding-top: 60px;
+        margin-right: 50px;
+        font-size: 21px;
+        letter-spacing: 0.01em;
     }
 }
 
@@ -462,5 +593,54 @@ input[class=vermas]:hover {
         float: right;
         margin-right: 50px;
         margin-bottom: 55px;
+    }
+
+    .proceduresimagesdiv {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .pic1 {
+        height: 200px;
+        width: 350px;
+        flex:1;
+        margin-top: 0px;
+        margin-bottom: 20px;x;
+    }
+    
+    .pic2 {
+        height: 200px;
+        width: 350px;
+        flex:1;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .pic3 {
+        height: 200px;
+        width: 350px;
+        flex:1;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .pic4 {
+        height: 200px;
+        width: 350px;
+        flex:1;
+        margin-top: 0px;
+        margin-bottom: 20px; 
+    }
+
+    .src2 {
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
     }
 }
