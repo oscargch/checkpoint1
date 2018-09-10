@@ -180,6 +180,7 @@ input[class=english]:hover {
     max-height: inherit;
     max-width: inherit;
     object-fit: cover;
+    opacity: 0.8;
 }
 
 /* estos son los radio selectors del slider */
@@ -233,32 +234,6 @@ input[class=english]:hover {
     border-radius: 10px;
     padding-top: 0px;
     padding-right: 50px;
-}
-
-.behindtxt2 {
-    background-color: #3c98ee48;
-    width: 430px;
-    float: right;
-    height: 30%;
-    border-radius: 10px;
-    padding-top: 0px;
-    padding-right: 50px;
-}
-
-.behindtxt2 p {
-    font-size: 150%;
-    font-family: 'Lato';
-    float: right;
-    /* background-color: rgba(72, 72, 72, 0.721); */
-    text-align: justify;
-    color: #ffffff;
-    padding-top: 10px;
-    padding-left: 30px;
-    text-shadow: 1px 1px 1px black;
-}
-
-two > h1 {
-    float: right;
 }
 
 .slidernav {
@@ -761,6 +736,35 @@ input[class=vermas]:hover {
     .contactus input[type="text"] {
             width: 250px;
         }
+
+        .slide_img h1 {
+            font-family: 'Lato';
+            font-size: 250%;
+            color: #3c98ee;
+            text-shadow: 1px 1px 2px black;
+            padding-top: 150px;
+            padding-right: 100px;
+        }
+        
+        .behindtxt p {
+            font-size: 130%;
+            font-family: 'Lato';
+            /* background-color: rgba(72, 72, 72, 0.721); */
+            text-align: justify;
+            color: #ffffff;
+            padding-top: 10px;
+            padding-left: 30px;
+            text-shadow: 1px 1px 1px black;
+        }
+        
+        .behindtxt {
+            background-color: #3c98ee48;
+            width: 380px;
+            height: 27%;
+            border-radius: 10px;
+            padding-top: 0px;
+            padding-right: 40px;
+        }
 }
 
 @media(min-width:1155px){
@@ -955,5 +959,34 @@ input[class=vermas]:hover {
 
     .contactus h3{
         padding-left: 0px;
+    }
+
+    .slide_img h1 {
+        font-family: 'Lato';
+        font-size: 200%;
+        color: #3c98ee;
+        text-shadow: 1px 1px 2px black;
+        padding-top: 150px;
+        padding-right: 100px;
+    }
+    
+    .behindtxt p {
+        font-size: 100%;
+        font-family: 'Lato';
+        /* background-color: rgba(72, 72, 72, 0.721); */
+        text-align: justify;
+        color: #ffffff;
+        padding-top: 10px;
+        padding-left: 30px;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    .behindtxt {
+        background-color: #3c98ee48;
+        width: 200px;
+        height: 36%;
+        border-radius: 10px;
+        padding-top: 0px;
+        padding-right: 40px;
     }
 }
