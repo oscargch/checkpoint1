@@ -577,7 +577,7 @@ input[class=vermas]:hover {
 }
 
 .btn5 {
-    background: rgb(61, 61, 61);
+    background: #68b2f8;
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -585,6 +585,7 @@ input[class=vermas]:hover {
     margin-top: 10px;
     position: absolute;
     align: right;
+    margin-bottom: 50px;
 } 
 
 .contactus h3{
