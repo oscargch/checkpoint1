@@ -281,7 +281,7 @@ input[class=english]:hover {
 
 .doctordescription h1 {
     font-size: 250%;
-    padding-top: 75px;
+    padding-top: 35px;
     color: #77b9f8;
 }
 
@@ -292,7 +292,7 @@ input[class=english]:hover {
 
 .doctordescription p {
     color: #898989;
-    padding-top: 60px;
+    padding-top: 50px;
     margin-right: 50px;
     font-size: 21px;
     letter-spacing: 0.01em;
@@ -484,7 +484,7 @@ input[class=vermas]:hover {
     flex:1;
     margin-left: 50px;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     align-self: center;
     
 }
@@ -492,7 +492,7 @@ input[class=vermas]:hover {
 .picB {
     flex:1;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     align-self: center;
 }
 
@@ -500,7 +500,7 @@ input[class=vermas]:hover {
     flex:1;
     margin-right: 0px;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     align-self: center;
 }
 
