@@ -317,7 +317,6 @@ input[class=vermas] {
     margin-right: 200px;
     margin-bottom: 55px;
     -webkit-appearance: none;
-    -webkit-border-radius:0; 
 }
 
 input[class=vermas]:hover {
@@ -724,7 +723,6 @@ input[class=vermas]:hover {
         margin-bottom: 55px;
         margin-left: 50px;
         -webkit-appearance: none;
-        -webkit-border-radius:0; 
     }
 
     .proceduresimagesdiv {
