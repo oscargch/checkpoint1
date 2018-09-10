@@ -170,6 +170,7 @@ input[class=english]:hover {
     max-height: inherit;
     max-width: inherit;
     object-fit: cover;
+    overflow: hidden;
 }
 
 /* Esta es la propiedad que cambia el tama;o de la imagen con el resize del browser. */
@@ -203,6 +204,61 @@ input[class=english]:hover {
 
 .nxt {
     right: 0;
+}
+
+.slide_img h1 {
+    font-family: 'Lato';
+    font-size: 300%;
+    color: #3c98ee;
+    text-shadow: 1px 1px 2px black;
+    padding-top: 150px;
+    padding-right: 100px;
+}
+
+.behindtxt p {
+    font-size: 150%;
+    font-family: 'Lato';
+    /* background-color: rgba(72, 72, 72, 0.721); */
+    text-align: justify;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-left: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.behindtxt {
+    background-color: #3c98ee48;
+    width: 430px;
+    height: 30%;
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-right: 50px;
+}
+
+.behindtxt2 {
+    background-color: #3c98ee48;
+    width: 430px;
+    float: right;
+    height: 30%;
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-right: 50px;
+}
+
+.behindtxt2 p {
+    font-size: 150%;
+    font-family: 'Lato';
+    float: right;
+    /* background-color: rgba(72, 72, 72, 0.721); */
+    text-align: justify;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-left: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+
+two > h1 {
+    float: right;
 }
 
 .slidernav {
