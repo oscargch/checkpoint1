@@ -716,6 +716,23 @@ input[class=vermas]:hover {
         padding: 22px 0 0 0;
         width: 240px;
     }
+
+    .prev {
+        border-bottom: 6px solid #68b2f8;
+        border-left: 6px solid #68b2f8;
+        transform: rotate(45deg);
+        left: 10px;
+        z-index: 99;
+     }
+     
+     .next {
+        border-bottom: 6px solid #68b2f8;
+        border-left: 6px solid #68b2f8;
+        transform: rotate(-135deg);
+        right: 10px;
+        z-index: 99;
+     }
+
     .doctordescription h1 {
         font-size: 180%;
         padding-top: 50px;
