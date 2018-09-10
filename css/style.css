@@ -174,7 +174,7 @@ input[class=english]:hover {
     height: 100%;
     max-height: inherit;
     max-width: inherit;
-    object-fit: none;
+    object-fit: cover;
 }
 
 /* estos son los radio selectors del slider */
@@ -456,11 +456,59 @@ input[class=vermas]:hover {
     letter-spacing: 0.01em;
 }
 
+.certimages {
+    width: 1125px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    display: flex;
+    align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.src3 {
+    /* display: inline-block; */
+    align-content: center;
+}
+
+.picA {
+    flex:1;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    align-self: center;
+    
+}
+
+.picB {
+    flex:1;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.picC {
+    flex:1;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    align-self: center;
+}
+
+.space {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
 .map {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: grey;
+    padding-top: 0px;
+    background-color: white;
+    color: white;
     height: 360px;
     overflow: hidden;
 }
@@ -472,7 +520,60 @@ input[class=vermas]:hover {
     background-color: white;
     height: 370px;
     overflow: hidden;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px;
+    position: relative; */
 }
+
+.footer p {
+    text-align: left;
+    color: rgb(56, 55, 55);
+    padding: 5px;
+    padding-left: 30px;
+}
+
+.footer h3 {
+    text-align: left;
+    padding: 30px 0px 10px 30px;
+}
+
+.socialmedia {
+    flex: 1;
+    width: 270px;
+}
+
+.officeinfo {
+    flex: 1;
+    width: 270px;
+}
+
+.contactus {
+    flex: 1;
+    width: 270px;
+}
+
+.txtinput {
+    width: 220px;
+    height: 30px;
+}
+
+.txtinput2 {
+    width: 220px;
+    height: 90px;
+}
+
+.btn5 {
+    background: rgb(61, 61, 61);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px 10px;
+    margin-top: 10px;
+    position: absolute;
+    align: right;
+} 
 
 @media(max-width:1155px){
     .navbar-nav{display: none;}
