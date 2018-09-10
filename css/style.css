@@ -563,6 +563,7 @@ input[class=vermas]:hover {
 
 .contactus {
     flex: 1;
+    margin-left: 50px;
     width: 270px;
 }
 
@@ -696,6 +697,10 @@ input[class=vermas]:hover {
         justify-content: center;
         align-content: center;
         }
+
+    .contactus {
+        margin-left: 50px;
+    }
 
     .contactus input[type="text"] {
             width: 250px;
@@ -872,11 +877,10 @@ input[class=vermas]:hover {
         }
 
     .contactus {
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
     .contactus h3{
-        padding-left: 30px;
-        margin-left: -25px;
+        padding-left: 0px;
     }
 }
