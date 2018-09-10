@@ -130,6 +130,7 @@ input[class=english] {
     cursor: pointer;
     transition: .5s;
     -webkit-appearance: none;
+    -webkit-border-radius:0; 
 }
 
 input[class=english]:hover {
@@ -316,6 +317,7 @@ input[class=vermas] {
     margin-right: 200px;
     margin-bottom: 55px;
     -webkit-appearance: none;
+    -webkit-border-radius:0; 
 }
 
 input[class=vermas]:hover {
@@ -722,6 +724,7 @@ input[class=vermas]:hover {
         margin-bottom: 55px;
         margin-left: 50px;
         -webkit-appearance: none;
+        -webkit-border-radius:0; 
     }
 
     .proceduresimagesdiv {
