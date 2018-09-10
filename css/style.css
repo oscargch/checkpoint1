@@ -587,6 +587,15 @@ input[class=vermas]:hover {
     align: right;
 } 
 
+.contactus h3{
+    padding-left: 30px;
+    margin-left: -25px;
+}
+
+.contactus input[type="text"] {
+    width: 300px;
+}
+
 @media(max-width:1155px){
     .navbar-nav{display: none;}
     .logomcg    {
@@ -675,6 +684,21 @@ input[class=vermas]:hover {
         /* margin-top: 20px;
         position: relative; */
     }
+
+    .certimages {
+        width: 600px;
+        margin-left: auto;
+         margin-right: auto;
+        padding-bottom: 0px;
+        display: flex;
+        align: center;
+        justify-content: center;
+        align-content: center;
+        }
+
+    .contactus input[type="text"] {
+            width: 250px;
+        }
 }
 
 @media(min-width:1155px){
@@ -797,9 +821,61 @@ input[class=vermas]:hover {
     }
  
     .certimages {
-        display: block;
+        width: 100%;
+        display: inline;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 0px;
+        }
+
+        .picA {
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            align-self: center;
+            
+        }
+        
+        .picB {
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            align-self: center;
+        }
+        
+        .picC {
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            align-self: center;
+        }
+
+    .footer1 {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        height: auto;
+        overflow: hidden;
+        color: black;
+        display: block;
+        justify-content: space-between;
+        /* margin-top: 20px;
+        position: relative; */
+        }
+
+    .contactus {
+        padding-left: 20px;
     }
 
+    .contactus h3{
+        padding-left: 30px;
+        margin-left: -25px;
+    }
 }
