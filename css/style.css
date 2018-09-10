@@ -209,26 +209,26 @@ input[class=english]:hover {
 
 .slide_img h1 {
     font-family: 'Lato';
-    font-size: 300%;
-    color: #3c98ee;
-    text-shadow: 1px 1px 2px black;
+    font-size: 400%;
+    color: rgba(255, 255, 255, 0.913);
+    text-shadow: 1px 1px 300px black;
     padding-top: 150px;
     padding-right: 100px;
 }
 
 .behindtxt p {
     font-size: 150%;
-    font-family: 'Lato';
+    font-family: 'Roboto';
     /* background-color: rgba(72, 72, 72, 0.721); */
     text-align: justify;
-    color: #ffffff;
+    color: #ffffffd7;
     padding-top: 10px;
     padding-left: 30px;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 100px black;
 }
 
 .behindtxt {
-    background-color: #3c98ee48;
+    background-color: rgba(204, 204, 204, 0.166);
     width: 430px;
     height: 30%;
     border-radius: 10px;
@@ -988,5 +988,16 @@ input[class=vermas]:hover {
         border-radius: 10px;
         padding-top: 0px;
         padding-right: 40px;
+    }
+
+    .slide_img img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-height: inherit;
+        max-width: inherit;
+        object-fit: cover;
+        overflow: hidden;
+        object-position: 0 150%;
     }
 }
