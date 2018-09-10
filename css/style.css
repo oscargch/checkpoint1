@@ -790,10 +790,13 @@ input[class=vermas]:hover {
     .certifications {
         width: 450px;
         height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
  
     .certimages {
-        display: inline-block;
+        display: block;
         margin-left: auto;
         margin-right: auto;
     }
