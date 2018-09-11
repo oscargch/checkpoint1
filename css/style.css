@@ -740,26 +740,26 @@ input[class=vermas]:hover {
         .slide_img h1 {
             font-family: 'Lato';
             font-size: 250%;
-            color: #3c98ee;
-            text-shadow: 1px 1px 2px black;
+            color: rgba(255, 255, 255, 0.913);
+            text-shadow: 1px 1px 300px black;
             padding-top: 150px;
             padding-right: 100px;
         }
         
         .behindtxt p {
             font-size: 130%;
-            font-family: 'Lato';
+            font-family: 'Roboto';
             /* background-color: rgba(72, 72, 72, 0.721); */
             text-align: justify;
             color: #ffffff;
             padding-top: 10px;
             padding-left: 30px;
-            text-shadow: 1px 1px 1px black;
+            text-shadow: 1px 1px 100px black;
         }
         
         .behindtxt {
-            background-color: #3c98ee48;
-            width: 380px;
+            background-color: rgba(204, 204, 204, 0.166);
+            width: 340px;
             height: 27%;
             border-radius: 10px;
             padding-top: 0px;
@@ -964,27 +964,29 @@ input[class=vermas]:hover {
     .slide_img h1 {
         font-family: 'Lato';
         font-size: 200%;
-        color: #3c98ee;
-        text-shadow: 1px 1px 2px black;
+        color: rgba(255, 255, 255, 0.913);
+        text-shadow: 1px 1px 300px black;
         padding-top: 150px;
         padding-right: 100px;
     }
     
     .behindtxt p {
+        width: 240px;
         font-size: 100%;
-        font-family: 'Lato';
+        font-family: 'Roboto';
         /* background-color: rgba(72, 72, 72, 0.721); */
         text-align: justify;
         color: #ffffff;
         padding-top: 10px;
-        padding-left: 30px;
-        text-shadow: 1px 1px 1px black;
+        padding-left: 10px;
+        padding-right: 70px;
+        text-shadow: 1px 1px 100px black;
     }
     
     .behindtxt {
-        background-color: #3c98ee48;
-        width: 200px;
-        height: 36%;
+        background-color: rgba(204, 204, 204, 0.166);
+        width: 180px;
+        height: 32%;
         border-radius: 10px;
         padding-top: 0px;
         padding-right: 40px;
@@ -998,6 +1000,6 @@ input[class=vermas]:hover {
         max-width: inherit;
         object-fit: cover;
         overflow: hidden;
-        object-position: 0 150%;
+        object-position: 0 50%;
     }
 }
