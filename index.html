@@ -1,176 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Dr. Mario Carranza</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:100" rel="stylesheet">
-    </head>
-    <body>
-            <nav class="navbar">
-                    <span class="open-slide">
-                        <a class="hamburger" href="#" onclick="OpenSlideMenu()">
-                            <svg width="30" height="30">
-                                <path d="M0,5 30,5" stroke="#888888" stroke-width="5" />
-                                <path d="M0,14 30,14" stroke="#888888" stroke-width="5" />
-                                <path d="M0,23 30,23" stroke="#888888" stroke-width="5" />
-                            </svg>
-                        </a>
-                    </span>
-                    <img src="./images/LogoMCG.png" alt="Logo" class="logomcg">
-                    <ul class="navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Procedimientos</a></li>
-                        <li><a href="#">Testimonios</a></li>
-                        <li><a href="#">Galería</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                    <input type="button" class="english" value="ENGLISH">
-                </nav>
-        
-                <div id="side-menu" class="side-nav">
-                    <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
-                    <a href="#">Home</a>
-                    <a href="#">Procedimientos</a>
-                    <a href="#">Testimonios</a>
-                    <a href="#">Galería</a>
-                    <a href="#">Contacto</a>
-                </div>
 
-<div id="main">
-                <div class="container">
+<head>
+    <title>Dr. Mario Carranza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:100" rel="stylesheet">
+</head>
 
-                    <input type="radio" name="images" id="i1" checked>
-                    <input type="radio" name="images" id="i2">
-                    <input type="radio" name="images" id="i3">
+<body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a class="hamburger" href="#" onclick="OpenSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#888888" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#888888" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#888888" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <img src="./images/LogoMCG.png" alt="Logo" class="logomcg">
+        <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Procedimientos</a></li>
+            <li><a href="#">Testimonios</a></li>
+            <li><a href="#">Galería</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <input type="button" class="english" value="ENGLISH">
+    </nav>
 
-                    <div class="slide_img" id="one">
-                        <img src="./images/Placeholders/Slider_PS_2.jpg" alt="botox" class="src">
-
-                        <label for="i3" class="pre"></label>
-                        <label for="i2" class="nxt"><h1>Botox Cosmetics</h1><div class="behindtxt"><p>Quick, safe and effective, Botox reduces or eliminates facial lines and wrinkles for 3-4 months with no downtime or surgery and little to no discomfort.</p></div> </label>
-                        <div for="i3" class="arrows prev"></div>
-                        <div for="i2" class="arrows next"></div>
-
-                    </div>
-                    
-                    <div class="slide_img" id="two">
-                            <img src="./images/Placeholders/Slider_PS_1.jpg" alt="collagen" class="src srx">
-
-                            <label for="i1" class="pre"></label>
-                            <label for="i3" class="nxt"></label>
-                            <div for="i1" class="arrows prev"></div>
-                            <div for="i3" class="arrows next"></div>
-
-                    </div>
-
-                    <div class="slide_img" id="three">
-                            <img src="./images/Placeholders/Slider_PS_3.jpg" alt="breast" class="src">
-
-                            <label for="i2" class="pre"></label>
-                            <label for="i1" class="nxt"><h1>Breast Reduction</h1><div class="behindtxt"><p>Quick, safe and effective, Botox reduces or eliminates facial lines and wrinkles for 3-4 months with no downtime or surgery and little to no discomfort.</p></div></label>
-                            <div for="i2" class="arrows prev"></div>
-                            <div for="i1" class="arrows next"></div>
-
-                    </div>
-
-                    <div class="slidernav">
-                        <label class="dots" id="dot1" for="i1"></label>
-                        <label class="dots" id="dot2" for="i2"></label>
-                        <label class="dots" id="dot3" for="i3"></label>
-                    </div>
-
-                </div>
-
-    <div class="doctordescription">
-        <h1>Dr. Mario Carranza García</h1>
-        <h2>Cirujano Plástico y Reconstructivo</h2>
-        <p>We have been serving the greater Monterrey area for many years now, helping men and women look and feel their best. We’re not here to transform your appearance. Our goal is simply to enhance the beauty you already have.
-
-                We provide a wide range of reconstructive and cosmetic surgery services, and we undertake in-depth consultations with our patients to find out not only what they want, but what is best for them.</p>
-        <input type="button" class="vermas" value="Ver más...">
-    </div>
-    <div class="clear"></div>
-    <div class="procedurescont">
-        <div class="procedurestext">
-            <h1>Procedimientos Estéticos<br> & Reconstructivos</h1>
-            <hr>
-            <p>Cada rostro...</p>
-        </div>
-
-        <div class="proceduresimagesdiv"> 
-            <div class="pic1"><img src="./images/Placeholders/canstockphoto10487392.jpg" alt="" class="src2"></div>
-            <div class="pic2"><img src="./images/Placeholders/konturnaya-plastika-3.jpg" alt="" class="src2"></div>
-            <div class="pic3"><img src="./images/Placeholders/Best-Nose-Job-Plastic-Surgeons-in-Chicago.jpg" alt="" class="src2"></div>
-            <div class="pic4"><img src="./images/Placeholders/plastic-surgery.jpg" alt="" class="src2"></div>
-        </div>
-
-        <div class="certifications">
-            <div class="certxt">
-            <h1>Certificaciones</h1>
-        <p>It is important... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quibusdam corporis ullam dignissimos at, vitae voluptates nisi ipsum ad? Distinctio est officia, voluptates deleniti inventore asperiores non porro! Laborum, sit?</p>
-            </div>
-            <div class="certimages">
-            <div class="picA"><img src="./images/Placeholders/unnamed.png" alt="" class="src3"></div>
-            <div class="picB"><img src="./images/Placeholders/unnamed-1.png" alt="" class="src3"></div>
-            <div class="picC"><img src="./images/Placeholders/unnamed-2.png" alt="" class="src3"></div>
-            </div>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Procedimientos</a>
+        <a href="#">Testimonios</a>
+        <a href="#">Galería</a>
+        <a href="#">Contacto</a>
     </div>
 
-        <div class="space">
+    <div id="main">
+        <div class="container">
+
+            <input type="radio" name="images" id="i1" checked>
+            <input type="radio" name="images" id="i2">
+            <input type="radio" name="images" id="i3">
+
+            <div class="slide_img" id="one">
+                <img src="./images/Placeholders/Slider_PS_2.jpg" alt="botox" class="src">
+
+                <label for="i3" class="pre"></label>
+                <label for="i2" class="nxt">
+                    <h1>Botox Cosmetics</h1>
+                    <div class="behindtxt">
+                        <p>Quick, safe and effective, Botox reduces or eliminates facial lines and wrinkles for 3-4
+                            months with no downtime or surgery and little to no discomfort.</p>
+                    </div>
+                </label>
+                <div for="i3" class="arrows prev"></div>
+                <div for="i2" class="arrows next"></div>
+
+            </div>
+
+            <div class="slide_img" id="two">
+                <img src="./images/Placeholders/Slider_PS_1.jpg" alt="collagen" class="src srx">
+
+                <label for="i1" class="pre"></label>
+                <label for="i3" class="nxt"></label>
+                <div for="i1" class="arrows prev"></div>
+                <div for="i3" class="arrows next"></div>
+
+            </div>
+
+            <div class="slide_img" id="three">
+                <img src="./images/Placeholders/Slider_PS_3.jpg" alt="breast" class="src">
+
+                <label for="i2" class="pre"></label>
+                <label for="i1" class="nxt">
+                    <h1>Breast Reduction</h1>
+                    <div class="behindtxt">
+                        <p>Quick, safe and effective, Botox reduces or eliminates facial lines and wrinkles for 3-4
+                            months with no downtime or surgery and little to no discomfort.</p>
+                    </div>
+                </label>
+                <div for="i2" class="arrows prev"></div>
+                <div for="i1" class="arrows next"></div>
+
+            </div>
+
+            <div class="slidernav">
+                <label class="dots" id="dot1" for="i1"></label>
+                <label class="dots" id="dot2" for="i2"></label>
+                <label class="dots" id="dot3" for="i3"></label>
+            </div>
 
         </div>
 
-        <div class="map">
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="360" id="gmap_canvas" src="https://maps.google.com/maps?q=Hidalgo%202425%20Pte.-306%2C%20Col.%20Obispado%2C%20Monterrey%2C%20N.L.%2C%20M%C3%A9xico&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div><style>.mapouter{text-align:right;height:360px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:360px;width:100%;-webkit-filter:grayscale(100%);filter: grayscale(80%)}</style></div>
-        </div>
+        <div class="doctordescription">
+            <h1>Dr. Mario Carranza García</h1>
+            <h2>Cirujano Plástico y Reconstructivo</h2>
+            <p>We have been serving the greater Monterrey area for many years now, helping men and women look and feel
+                their best. We’re not here to transform your appearance. Our goal is simply to enhance the beauty you
+                already have.
 
-        <div class="footer">
+                We provide a wide range of reconstructive and cosmetic surgery services, and we undertake in-depth
+                consultations with our patients to find out not only what they want, but what is best for them.</p>
+            <input type="button" class="vermas" value="Ver más...">
+        </div>
+        <div class="clear"></div>
+        <div class="procedurescont">
+            <div class="procedurestext">
+                <h1>Procedimientos Estéticos<br> & Reconstructivos</h1>
+                <hr>
+                <p>Cada rostro...</p>
+            </div>
+
+            <div class="proceduresimagesdiv">
+                <div class="pic1"><img src="./images/Placeholders/canstockphoto10487392.jpg" alt="" class="src2"></div>
+                <div class="pic2"><img src="./images/Placeholders/konturnaya-plastika-3.jpg" alt="" class="src2"></div>
+                <div class="pic3"><img src="./images/Placeholders/Best-Nose-Job-Plastic-Surgeons-in-Chicago.jpg" alt=""
+                        class="src2"></div>
+                <div class="pic4"><img src="./images/Placeholders/plastic-surgery.jpg" alt="" class="src2"></div>
+            </div>
+
+            <div class="certifications">
+                <div class="certxt">
+                    <h1>Certificaciones</h1>
+                    <p>It is important... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quibusdam
+                        corporis ullam dignissimos at, vitae voluptates nisi ipsum ad? Distinctio est officia,
+                        voluptates deleniti inventore asperiores non porro! Laborum, sit?</p>
+                </div>
+                <div class="certimages">
+                    <div class="picA"><img src="./images/Placeholders/unnamed.png" alt="" class="src3"></div>
+                    <div class="picB"><img src="./images/Placeholders/unnamed-1.png" alt="" class="src3"></div>
+                    <div class="picC"><img src="./images/Placeholders/unnamed-2.png" alt="" class="src3"></div>
+                </div>
+            </div>
+
+            <div class="space">
+
+            </div>
+
+            <div class="map">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="100%" height="360" id="gmap_canvas" src="https://maps.google.com/maps?q=Hidalgo%202425%20Pte.-306%2C%20Col.%20Obispado%2C%20Monterrey%2C%20N.L.%2C%20M%C3%A9xico&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div>
+                    <style>.mapouter{text-align:right;height:360px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:360px;width:100%;-webkit-filter:grayscale(100%);filter: grayscale(80%)}</style>
+                </div>
+            </div>
+
+            <div class="footer">
                 <div class="footer1">
-                        <div class="socialmedia">
-                            <h3>DIRECCIÓN</h3><br>
-                            <p>Centro Médico Hidalgo</p>
-                            <p>Hidalgo 2425, 3er Piso</p>
-                            <p>Col. Obispado</p>
-                            <p>Monterrey, NL</p>
-                            <p>64060 México</p>
-                            <p><strong>Telephone +52 (81) 8318 6820</strong></p>
-                        </div>
-                        <div class="officeinfo">
-                            <h3>HORARIO</h3><br>
-                            <p>Lunes - Jueves:</p>
-                            <p>10:00 am - 8:00 pm</p>
-                            <p>Jueves - Viernes:</p>
-                            <p>10:00 am - 8:00 pm</p>
-                            <p>Sábado</p>
-                            <p>10:00 am - 1:00 pm</p>
-                        </div>
-                        <div class="contactus">
-                            <h3>CONTACTO</h3>
-                            <p>Name</p>
-                            <input type="text" class="txtinput">
-                            <p>Message</p>
-                            <input type="text" class="txtinput2"><br>
-                            <input type="button" class="btn5" value="send" />
-                        </div>
+                    <div class="socialmedia">
+                        <h3>DIRECCIÓN</h3><br>
+                        <p>Centro Médico Hidalgo</p>
+                        <p>Hidalgo 2425, 3er Piso</p>
+                        <p>Col. Obispado</p>
+                        <p>Monterrey, NL</p>
+                        <p>64060 México</p>
+                        <p><strong>Telephone +52 (81) 8318 6820</strong></p>
                     </div>
+                    <div class="officeinfo">
+                        <h3>HORARIO</h3><br>
+                        <p>Lunes - Jueves:</p>
+                        <p>10:00 am - 8:00 pm</p>
+                        <p>Jueves - Viernes:</p>
+                        <p>10:00 am - 8:00 pm</p>
+                        <p>Sábado</p>
+                        <p>10:00 am - 1:00 pm</p>
+                    </div>
+                    <div class="contactus">
+                        <h3>CONTACTO</h3>
+                        <p>Name</p>
+                        <input type="text" class="txtinput">
+                        <p>Message</p>
+                        <input type="text" class="txtinput2"><br>
+                        <input type="button" class="btn5" value="send" />
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- este es el main div, todo arriba de esto. -->
     </div>
-<!-- este es el main div, todo arriba de esto. -->
-</div>
-                </body>
-                <script>
-                    function OpenSlideMenu(){
-                        document.getElementById('side-menu').style.width = '250px';
-                        document.getElementById('main').style.marginLeft = '250px';
-                    }
-        
-                    function CloseSlideMenu(){
-                        document.getElementById('side-menu').style.width = '0px';
-                        document.getElementById('main').style.marginLeft = '0px';
-                    }
-                </script>
-    </body>
+</body>
+<script>
+    function OpenSlideMenu() {
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function CloseSlideMenu() {
+        document.getElementById('side-menu').style.width = '0px';
+        document.getElementById('main').style.marginLeft = '0px';
+    }
+</script>
+</body>
+
 </html>
