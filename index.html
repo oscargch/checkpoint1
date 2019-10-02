@@ -5,13 +5,66 @@
     <title>Dr. Mario Carranza</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Professional Aesthetic and Reconstructive Plastic Surgeon from Monterrey, Mexico.">
+    <meta name="keywords" content="Surgery,Plastic Surgery,Plastic Surgeon,Professional Surgeon,Reconstructive Surgeon">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:100" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        console.log("js changes are being executed")
+    $(document).ready(function() 
+    {
+        console.log("we are here")
+        var done = false;
+        $(window).scroll(function() 
+        {
+            if (!done) {
+                done = true;
+                console.log("we are scrolling", $(window).scrollTop())
+            }
+
+            if($(window).scrollTop()>1055)
+            {
+                console.log("over 100")
+                $('#scroll').fadeIn();
+            }
+            else 
+            {
+                $('#scroll').fadeOut();
+            }
+        });
+
+        console.log("whe are here #2")
+        $('#scroll').click(function()
+        {
+            $("html, body").animate(
+            { scrollTop: 1055 }, 400);
+            return false;
+
+            // va haber que seleccionar procedures bar en lugar de los pixeles.
+        });
+
+        console.log("attaching target", $("#side-manu > span, .navbar-nav > span"))
+
+        $("#side-menu > span, .navbar-nav > li > span").click(function (event) {
+            CloseSlideMenu();
+            var scrollTarget = $(event.target).attr('scroll-to')
+            console.log("clicked", scrollTarget)
+            if(scrollTarget) {
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $(scrollTarget).offset().top
+                }, 500);
+            }
+        })
+    });
+
+    </script>
 </head>
 
 <body>
+        <a name="Home"></a>
     <nav class="navbar">
         <span class="open-slide">
             <a class="hamburger" href="#" onclick="OpenSlideMenu()">
@@ -24,22 +77,19 @@
         </span>
         <img src="./images/LogoMCG.png" alt="Logo" class="logomcg">
         <ul class="navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Procedimientos</a></li>
-            <li><a href="#">Testimonios</a></li>
-            <li><a href="#">Galería</a></li>
-            <li><a href="#">Contacto</a></li>
+            <!-- <li><a href="#Home">Home</a></li> -->
+            <li><a href="#Procedures">Procedures</a></li>
+            <li><a href="#Certifications">Certifications</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
-        <input type="button" class="english" value="ENGLISH">
+        <input type="button" class="english" value="ESPAÑOL">
     </nav>
 
     <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Procedimientos</a>
-        <a href="#">Testimonios</a>
-        <a href="#">Galería</a>
-        <a href="#">Contacto</a>
+      <span class="btn-close" onclick="CloseSlideMenu()">&times;</span>
+      <span scroll-to="#Procedures">Procedures</span>
+      <span scroll-to="#Certifications">Certifications</span>
+      <span scroll-to="#Contact">Contact</span>
     </div>
 
     <div id="main">
@@ -101,24 +151,123 @@
 
         <div class="doctordescription">
             <h1>Dr. Mario Carranza García</h1>
-            <h2>Cirujano Plástico y Reconstructivo</h2>
+            <hr>
+            <h2>Aesthetic and Reconstructive Plastic Surgeon</h2>
             <p>We have been serving the greater Monterrey area for many years now, helping men and women look and feel
-                their best. We’re not here to transform your appearance. Our goal is simply to enhance the beauty you
-                already have.
+                their best. Our goal is to enhance the beauty you already have.
 
                 We provide a wide range of reconstructive and cosmetic surgery services, and we undertake in-depth
-                consultations with our patients to find out not only what they want, but what is best for them.</p>
+                consultations with our patients to find out not only what they want, but to figure out what is best for them.</p>
             <input type="button" class="vermas" value="Ver más...">
         </div>
+
         <div class="clear"></div>
-        <div class="procedurescont">
-            <div class="procedurestext">
-                <h1>Procedimientos Estéticos<br> & Reconstructivos</h1>
-                <hr>
-                <p>Cada rostro...</p>
+
+        <div class="procedures">
+
+                <a name="Procedures"></a>
+            <div class="proceduresbar" id="Procedures">
+                <ul id="headertext">
+                        <li><a href="#facialsurgery">Facial Surgery</a></li>
+                        <li><a href="#bodysurgery">Body Surgery</a></li>
+                        <li><a href="#malesurgery">Male Surgery</a></li>
+                        <li><a href="#nonsurgical">Non Surgical Procedures</a></li>
+                        <li><a href="#facialrejuvenation">Facial Rejuvenation</a></li>
+                        <li><a href="#reconstructivesurgery">Reconstructive Surgery</a></li>
+                        <li><a href="#femalegenitalsurgery">Female Genital Surgery</a></li>
+                    </ul>
             </div>
 
-            <div class="proceduresimagesdiv">
+                
+                <div class="procedurestext">
+
+                </div>
+
+
+            </div>
+
+            <a name="facialsurgery"></a>
+            <div class="facialsurgery proceduresdivs">
+                <h1>Facial Surgery</h1><br>
+                <div class="pic1"><img src="./images/facialsurgery/nose.jpg" alt="" class="src2"></div>
+                <div class="pic2"><img src="./images/facialsurgery/chin.jpg" alt="" class="src2"></div>
+                <div class="pic3"><img src="./images/facialsurgery/ears.jpg" alt=""
+                        class="src2"></div>
+                <div class="pic4"><img src="./images/facialsurgery/cheekbones.jpg" alt="" class="src2"></div>
+                <div class="pic4"><img src="./images/facialsurgery/cheekbones3.jpg" alt="" class="src2"></div>
+            </div>
+
+            <a name="bodysurgery"></a>
+            <div class="bodysurgery proceduresdivs">
+                <h1>Body Surgery</h1><br>
+                <div class="pic1"><img src="./images/bodysurgery/1breastelevation.jpg" alt="" class="src2"></div>
+                <div class="pic2"><img src="./images/bodysurgery/2breastaugmentation.jpg" alt="" class="src2"></div>
+                <div class="pic3"><img src="./images/bodysurgery/3liposuction.jpg" alt="" class="src2"></div>
+                <div class="pic4"><img src="./images/bodysurgery/4breastreduction.jpg" alt="" class="src2"></div>
+                <div class="pic5"><img src="./images/bodysurgery/5tuberousbreasts.jpg" alt="" class="src2"></div>
+                <div class="pic6"><img src="./images/bodysurgery/6breastasymmetry.jpg" alt="" class="src2"></div>
+                <div class="pic7"><img src="./images/bodysurgery/7dermolipectomyarm.jpg" alt="" class="src2"></div>
+                <div class="pic8"><img src="./images/bodysurgery/8hand.jpg" alt="" class="src2"></div>
+                <div class="pic9"><img src="./images/bodysurgery/9invertednipple.jpg" alt="" class="src2"></div>
+                <div class="pic10"><img src="./images/bodysurgery/10nipplereduction.jpg" alt="" class="src2"></div>
+                <div class="pic11"><img src="./images/bodysurgery/11areolareduction.jpg" alt="" class="src2"></div>
+                <div class="pic12"><img src="./images/bodysurgery/12abdomen.jpg" alt="" class="src2"></div>
+                <div class="pic13"><img src="./images/bodysurgery/13calf.jpg" alt="" class="src2"></div>
+                <div class="pic14"><img src="./images/bodysurgery/14gluteous.jpg" alt="" class="src2"></div>
+            </div>
+
+            <a name="malesurgery"></a>
+            <div class="malesurgery proceduresdivs">
+                <h1>Male Surgery</h1><br>
+                <div class="pic1"><img src="./images/malesurgery/1gynecomastia.jpg" alt="" class="src2"></div>
+                <div class="pic2"><img src="./images/malesurgery/2hairimplant.jpg" alt="" class="src2"></div>
+                <div class="pic3"><img src="./images/malesurgery/3pectoral.jpg" alt="" class="src2"></div>
+                <div class="pic4"><img src="./images/malesurgery/4biceps.jpg" alt="" class="src2"></div>
+                <div class="pic5"><img src="./images/malesurgery/5calf.jpg" alt="" class="src2"></div>
+                <div class="pic6"><img src="./images/malesurgery/6malegenital.jpg" alt="" class="src2"></div>
+                <div class="pic7"><img src="./images/malesurgery/7genitalaesthetic.jpg" alt="" class="src2"></div>
+            </div>
+
+            <a name="nonsurgical"></a>
+            <div class="nonsurgical proceduresdivs">
+                <h1>Non Surgical Procedures</h1><br>
+                <div class="pic1"><img src="./images/nonsurgical/shutterstock_428839873.jpg" alt="" class="src2"></div>
+                <div class="pic2"><img src="./images/nonsurgical/shutterstock_595887836.jpg" alt="" class="src2"></div>
+                <div class="pic3"><img src="./images/nonsurgical/shutterstock_606339356.jpg" alt="" class="src2"></div>
+            </div>
+
+            <a name="facialrejuvenation"></a>
+            <div class="facialrejuvenation proceduresdivs">
+                <h1>Facial Rejuvenation</h1><br>
+                <div class="pic1"><img src="./images/facialrejuvenation/facialrejuvenation.jpg" alt="" class="src2"></div>
+                <div class="pic2"><img src="./images/facialrejuvenation/facelift.jpg" alt="" class="src2"></div>
+                <div class="pic3"><img src="./images/facialrejuvenation/eyelid.jpg" alt="" class="src2"></div>
+                <div class="pic4"><img src="./images/facialrejuvenation/dermabrasion.jpg" alt="" class="src2"></div>
+                <div class="pic5"><img src="./images/facialrejuvenation/dewlap.jpg" alt="" class="src2"></div>
+            </div>
+
+            <a name="reconstructivesurgery"></a>
+            <div class="reconstructivesurgery proceduresdivs">
+                <h1>Reconstructive Surgery</h1><br>
+                <div class="pic1"><img src="./images/reconstructive/1breastreconstruction.jpg" alt="" class="src2"></div>
+                <div class="pic2"><img src="./images/reconstructive/2oncological.jpg" alt="" class="src2"></div>
+                <div class="pic3"><img src="./images/reconstructive/3posttraumaticreconstruction.jpg" alt="" class="src2"></div>
+                <div class="pic4"><img src="./images/reconstructive/4congenitalmalformations.jpg" alt="" class="src2"></div>
+                <div class="pic5"><img src="./images/reconstructive/5harelip.jpg" alt="" class="src2"></div>
+                <div class="pic6"><img src="./images/reconstructive/6clefpalate.jpg" alt="" class="src2"></div>
+                <div class="pic7"><img src="./images/reconstructive/7angioma.jpg" alt="" class="src2"></div>
+                <div class="pic8"><img src="./images/reconstructive/8hand.jpg" alt="" class="src2"></div>
+                <div class="pic9"><img src="./images/reconstructive/9dupuyrten.jpg" alt="" class="src2"></div>
+                <div class="pic10"><img src="./images/reconstructive/10carpaltunnel.jpg" alt="" class="src2"></div>
+                <div class="pic11"><img src="./images/reconstructive/11scar.jpg" alt="" class="src2"></div>
+                <div class="pic12"><img src="./images/reconstructive/12posttumor.jpg" alt="" class="src2"></div>
+                <div class="pic13"><img src="./images/reconstructive/13nasogenianflag.jpg" alt="" class="src2"></div>
+                <div class="pic14"><img src="./images/reconstructive/14skin.jpg" alt="" class="src2"></div>
+            </div>
+
+            <a name="femalegenitalsurgery"></a>
+            <div class="femalegenitalsurgery proceduresdivs">
+                <h1>Female Genital Surgery</h1><br>
                 <div class="pic1"><img src="./images/Placeholders/canstockphoto10487392.jpg" alt="" class="src2"></div>
                 <div class="pic2"><img src="./images/Placeholders/konturnaya-plastika-3.jpg" alt="" class="src2"></div>
                 <div class="pic3"><img src="./images/Placeholders/Best-Nose-Job-Plastic-Surgeons-in-Chicago.jpg" alt=""
@@ -126,9 +275,13 @@
                 <div class="pic4"><img src="./images/Placeholders/plastic-surgery.jpg" alt="" class="src2"></div>
             </div>
 
-            <div class="certifications">
+        </div>
+       
+
+            <div class="certifications" id="Certifications">
                 <div class="certxt">
-                    <h1>Certificaciones</h1>
+                        <a name="Certifications"></a>
+                    <h1>Certifications</h1>
                     <p>It is important... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quibusdam
                         corporis ullam dignissimos at, vitae voluptates nisi ipsum ad? Distinctio est officia,
                         voluptates deleniti inventore asperiores non porro! Laborum, sit?</p>
@@ -152,28 +305,30 @@
                 </div>
             </div>
 
-            <div class="footer">
+            <div class="footer" id="Contact">
+                    <a name="Contact"></a>
                 <div class="footer1">
                     <div class="socialmedia">
-                        <h3>DIRECCIÓN</h3><br>
-                        <p>Centro Médico Hidalgo</p>
+                        <h3>ADDRESS</h3><br>
+                        <p>Hidalgo Medical Center</p>
                         <p>Hidalgo 2425, 3er Piso</p>
-                        <p>Col. Obispado</p>
-                        <p>Monterrey, NL</p>
+                        <p>Colonia El Obispado</p>
+                        <p>Monterrey, Nuevo León</p>
                         <p>64060 México</p>
-                        <p><strong>Telephone +52 (81) 8318 6820</strong></p>
+                        <p><strong>Telephone # : (81)-83-18-68-20.</strong></p>
+                        <p><strong>Dial from the U.S.A: 011-52-(81)-83-18-68-20.</strong></p>
                     </div>
                     <div class="officeinfo">
-                        <h3>HORARIO</h3><br>
-                        <p>Lunes - Jueves:</p>
+                        <h3>SCHEDULE</h3><br>
+                        <p>Monday - Thursday:</p>
                         <p>10:00 am - 8:00 pm</p>
-                        <p>Jueves - Viernes:</p>
+                        <p>Thursday - Friday:</p>
                         <p>10:00 am - 8:00 pm</p>
-                        <p>Sábado</p>
+                        <p>Saturday</p>
                         <p>10:00 am - 1:00 pm</p>
                     </div>
                     <div class="contactus">
-                        <h3>CONTACTO</h3>
+                        <h3>CONTACT</h3>
                         <p>Name</p>
                         <input type="text" class="txtinput">
                         <p>Message</p>
@@ -197,6 +352,8 @@
         document.getElementById('main').style.marginLeft = '0px';
     }
 </script>
+
+<a title="Go To Top" id="scroll" style="display:none;"><span></span></a>
 </body>
 
 </html>

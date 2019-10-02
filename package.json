@@ -1,0 +1,26 @@
+{
+  "name": "checkpoint1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd . && http-server -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscargch/checkpoint1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscargch/checkpoint1/issues"
+  },
+  "homepage": "https://github.com/oscargch/checkpoint1#readme",
+  "dependencies": {
+    "eslint": "^6.5.1",
+    "htmllint-cli": "0.0.7",
+    "http-server": "^0.11.1",
+    "stylelint": "^11.0.0"
+  }
+}
