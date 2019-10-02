@@ -92,6 +92,7 @@ transition: .2s;
     border-radius: 60px;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
+    z-index: 3;
   }
   
   #scroll span {
@@ -460,15 +461,17 @@ text-align: center;
     background-color: #77b9f8;
     color: white;
     text-align: justify;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    height: 90px;
-    padding-top: 33px;
+    /* text-overflow: ellipsis; */
+    /* overflow: hidden; */
+    /* height: 90px; */
+    /* padding-top: 33px; */
+    padding: 10px 0;
 }
 
 .proceduresbar li {
-    display: inline;
+    display: inline-block;
     text-align: center;
+    padding: 10px;
   }
 
 .proceduresbar p {
@@ -644,48 +647,77 @@ margin-bottom: 70px;
     color: #2685dd;
 }
 
-.pic1 {
+.pic {
 height: 300px;
 width: 540px;
 flex: 1;
 margin-top: 0px;
 margin-bottom: 20px;
-x;
+position: relative;
+margin-left: auto;
+margin-right: auto;
 }
 
-.pic2 {
-height: 300px;
-width: 540px;
-flex: 1;
-margin-top: 0px;
-margin-bottom: 20px;
+.pic-hover-text-container > a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
 }
 
-.pic3 {
-height: 300px;
-width: 540px;
-flex: 1;
-margin-top: 0px;
-margin-bottom: 20px;
+.pic-hover-text-container {
+    width: 100%;
+    height:100%;
+    opacity: 0;
+    z-index: 3;
 }
 
-.pic4 {
-height: 300px;
-width: 540px;
-flex: 1;
-margin-top: 0px;
-margin-bottom: 20px;
+/*
++
+~
+*/
+.pic-hover-text {
+    position: absolute;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 2.5em;
+    z-index: 2;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    color: #484848;
+    text-align: center;
+    line-height: 1;
 }
+
+.pic-hover-text-container:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+
+.pic > img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.pic > * {
+    position: absolute;
+}
+
 
 .src2 {
 width: 535px;
 height: 300px;
 object-fit: cover;
 border-radius: 10px;
+transition: 1s;
 }
 
-.src2:hover {
-opacity: 0.7;
+.src2-hovered {
+opacity: 0.4;
+transition: 1s;
+/* border: 2px solid var(--blue); */
 }
 
 .certifications {
@@ -835,11 +867,14 @@ width: 270px;
 .txtinput {
 width: 220px;
 height: 30px;
+border: 2px solid rgb(228, 228, 228);
 }
 
 .txtinput2 {
 width: 220px;
 height: 90px;
+resize: none;
+border: 2px solid rgb(228, 228, 228);
 }
 
 .btn5 {
@@ -1178,9 +1213,15 @@ input[class=vermas] {
     margin-top: 0px;
     margin-bottom: 20px;
 }
-.src2 {
+
+.pic {
     width: 350px;
     height: 200px;
+}
+
+.src2 {
+    /* width: 350px; */
+    /* height: 200px; */
     object-fit: cover;
     border-radius: 10px;
 }

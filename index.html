@@ -16,18 +16,16 @@
         console.log("js changes are being executed")
     $(document).ready(function() 
     {
-        console.log("we are here")
         var done = false;
         $(window).scroll(function() 
         {
             if (!done) {
                 done = true;
-                console.log("we are scrolling", $(window).scrollTop())
+                $(window).scrollTop()
             }
 
-            if($(window).scrollTop()>1055)
+            if($(window).scrollTop()>$(".proceduresbar").position().top) // get top position of the elment navbar $("#navbar").position().top
             {
-                console.log("over 100")
                 $('#scroll').fadeIn();
             }
             else 
@@ -36,11 +34,10 @@
             }
         });
 
-        console.log("whe are here #2")
         $('#scroll').click(function()
         {
             $("html, body").animate(
-            { scrollTop: 1055 }, 400);
+            { scrollTop: $(".proceduresbar").position().top }, 400);
             return false;
 
             // va haber que seleccionar procedures bar en lugar de los pixeles.
@@ -185,94 +182,409 @@
 
 
             </div>
+            <!-- 
+                [{link: rhinoplasty, src: nose.jpg}, {}, {}]
+            -->
 
             <a name="facialsurgery"></a>
             <div class="facialsurgery proceduresdivs">
                 <h1>Facial Surgery</h1><br>
-                <div class="pic1"><img src="./images/facialsurgery/nose.jpg" alt="" class="src2"></div>
-                <div class="pic2"><img src="./images/facialsurgery/chin.jpg" alt="" class="src2"></div>
-                <div class="pic3"><img src="./images/facialsurgery/ears.jpg" alt=""
-                        class="src2"></div>
-                <div class="pic4"><img src="./images/facialsurgery/cheekbones.jpg" alt="" class="src2"></div>
-                <div class="pic4"><img src="./images/facialsurgery/cheekbones3.jpg" alt="" class="src2"></div>
+
+                <div class="pic">
+                    <img src="./images/facialsurgery/nose.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/rhinoplasty.html" >
+                            <span class="pic-hover-text">Nose Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/facialsurgery/chin.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/chinsurgery.html" >
+                            <span class="pic-hover-text">Chin Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/facialsurgery/ears.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/earsurgery.html" >
+                            <span class="pic-hover-text">Ear Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/facialsurgery/cheekbones.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/cheekbone.html" >
+                            <span class="pic-hover-text">Cheek Bone Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/facialsurgery/cheekbones3.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/cheekfat.html" >
+                            <span class="pic-hover-text">Cheek Fat Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
             <a name="bodysurgery"></a>
             <div class="bodysurgery proceduresdivs">
                 <h1>Body Surgery</h1><br>
-                <div class="pic1"><img src="./images/bodysurgery/1breastelevation.jpg" alt="" class="src2"></div>
-                <div class="pic2"><img src="./images/bodysurgery/2breastaugmentation.jpg" alt="" class="src2"></div>
-                <div class="pic3"><img src="./images/bodysurgery/3liposuction.jpg" alt="" class="src2"></div>
-                <div class="pic4"><img src="./images/bodysurgery/4breastreduction.jpg" alt="" class="src2"></div>
-                <div class="pic5"><img src="./images/bodysurgery/5tuberousbreasts.jpg" alt="" class="src2"></div>
-                <div class="pic6"><img src="./images/bodysurgery/6breastasymmetry.jpg" alt="" class="src2"></div>
-                <div class="pic7"><img src="./images/bodysurgery/7dermolipectomyarm.jpg" alt="" class="src2"></div>
-                <div class="pic8"><img src="./images/bodysurgery/8hand.jpg" alt="" class="src2"></div>
-                <div class="pic9"><img src="./images/bodysurgery/9invertednipple.jpg" alt="" class="src2"></div>
-                <div class="pic10"><img src="./images/bodysurgery/10nipplereduction.jpg" alt="" class="src2"></div>
-                <div class="pic11"><img src="./images/bodysurgery/11areolareduction.jpg" alt="" class="src2"></div>
-                <div class="pic12"><img src="./images/bodysurgery/12abdomen.jpg" alt="" class="src2"></div>
-                <div class="pic13"><img src="./images/bodysurgery/13calf.jpg" alt="" class="src2"></div>
-                <div class="pic14"><img src="./images/bodysurgery/14gluteous.jpg" alt="" class="src2"></div>
+                <div class="pic">
+                    <img src="./images/bodysurgery/1breastelevation.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/breastelevation.html" >
+                            <span class="pic-hover-text">Breast Elevation</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/2breastaugmentation.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/breastaugmentation.html" >
+                            <span class="pic-hover-text">Breast Augmentation</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/3liposuction.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/liposuction.html" >
+                            <span class="pic-hover-text">Liposuction</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/4breastreduction.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/breastreduction.html" >
+                            <span class="pic-hover-text">Breast Reduction</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/5tuberousbreasts.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/tuberousbreasts.html" >
+                            <span class="pic-hover-text">Tuberous Breasts</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/6breastasymmetry.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/breastasymmetry.html" >
+                            <span class="pic-hover-text">Breast Asymmetry</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/7dermolipectomyarm.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/dermolipectomyarm.html" >
+                            <span class="pic-hover-text">Dermolipectomy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/8hand.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/handsurgery.html" >
+                            <span class="pic-hover-text">Hand Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/9invertednipple.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/invertednipples.html" >
+                            <span class="pic-hover-text">Inverted Nipples</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/10nipplereduction.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/nipplereduction.html" >
+                            <span class="pic-hover-text">Nipple Reduction</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/11areolareduction.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/areolareduction.html" >
+                            <span class="pic-hover-text">Areola Reduction</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/12abdomen.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/abdomen.html" >
+                            <span class="pic-hover-text">Abdomen Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/13calf.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/calf.html" >
+                            <span class="pic-hover-text">Calf Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/bodysurgery/14gluteous.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/gluteous.html" >
+                            <span class="pic-hover-text">Gluteous Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
             <a name="malesurgery"></a>
             <div class="malesurgery proceduresdivs">
                 <h1>Male Surgery</h1><br>
-                <div class="pic1"><img src="./images/malesurgery/1gynecomastia.jpg" alt="" class="src2"></div>
-                <div class="pic2"><img src="./images/malesurgery/2hairimplant.jpg" alt="" class="src2"></div>
-                <div class="pic3"><img src="./images/malesurgery/3pectoral.jpg" alt="" class="src2"></div>
-                <div class="pic4"><img src="./images/malesurgery/4biceps.jpg" alt="" class="src2"></div>
-                <div class="pic5"><img src="./images/malesurgery/5calf.jpg" alt="" class="src2"></div>
-                <div class="pic6"><img src="./images/malesurgery/6malegenital.jpg" alt="" class="src2"></div>
-                <div class="pic7"><img src="./images/malesurgery/7genitalaesthetic.jpg" alt="" class="src2"></div>
+                <div class="pic">
+                    <img src="./images/malesurgery/1gynecomastia.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/gynecomastia.html" >
+                            <span class="pic-hover-text">Gynecomastia</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/malesurgery/2hairimplant.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/hairimplants.html" >
+                            <span class="pic-hover-text">Hair Implants</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/malesurgery/3pectoral.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/chest.html" >
+                            <span class="pic-hover-text">Chest Implants</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/malesurgery/4biceps.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/biceps.html" >
+                            <span class="pic-hover-text">Bicep Implants</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/malesurgery/5calf.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/calfimplants.html" >
+                            <span class="pic-hover-text">Calf Implants</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pic">
+                    <img src="./images/malesurgery/6malegenital.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/malegenital.html" >
+                            <span class="pic-hover-text">Male Genital Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="./images/malesurgery/7genitalaesthetic.jpg" alt="" class="src2">
+                    <div class="pic-hover-text-container">
+                        <a href="/malegenitalaesthethic.html" >
+                            <span class="pic-hover-text">Aesthetical Male Genital Surgery</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
             <a name="nonsurgical"></a>
             <div class="nonsurgical proceduresdivs">
                 <h1>Non Surgical Procedures</h1><br>
-                <div class="pic1"><img src="./images/nonsurgical/shutterstock_428839873.jpg" alt="" class="src2"></div>
-                <div class="pic2"><img src="./images/nonsurgical/shutterstock_595887836.jpg" alt="" class="src2"></div>
-                <div class="pic3"><img src="./images/nonsurgical/shutterstock_606339356.jpg" alt="" class="src2"></div>
+                <div class="pic">
+                    <img src="./images/nonsurgical/shutterstock_428839873.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/nonsurgical/shutterstock_595887836.jpg" alt="" class="src2">
+                
+
+                </div>
+
+                <div class="pic">
+                    <img src="./images/nonsurgical/shutterstock_606339356.jpg" alt="" class="src2">
+                
+                </div>
+
             </div>
 
             <a name="facialrejuvenation"></a>
             <div class="facialrejuvenation proceduresdivs">
                 <h1>Facial Rejuvenation</h1><br>
-                <div class="pic1"><img src="./images/facialrejuvenation/facialrejuvenation.jpg" alt="" class="src2"></div>
-                <div class="pic2"><img src="./images/facialrejuvenation/facelift.jpg" alt="" class="src2"></div>
-                <div class="pic3"><img src="./images/facialrejuvenation/eyelid.jpg" alt="" class="src2"></div>
-                <div class="pic4"><img src="./images/facialrejuvenation/dermabrasion.jpg" alt="" class="src2"></div>
-                <div class="pic5"><img src="./images/facialrejuvenation/dewlap.jpg" alt="" class="src2"></div>
+                <div class="pic">
+                    <img src="./images/facialrejuvenation/facialrejuvenation.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/facialrejuvenation/facelift.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/facialrejuvenation/eyelid.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/facialrejuvenation/dermabrasion.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/facialrejuvenation/dewlap.jpg" alt="" class="src2">
+                
+                </div>
+
             </div>
 
             <a name="reconstructivesurgery"></a>
             <div class="reconstructivesurgery proceduresdivs">
                 <h1>Reconstructive Surgery</h1><br>
-                <div class="pic1"><img src="./images/reconstructive/1breastreconstruction.jpg" alt="" class="src2"></div>
-                <div class="pic2"><img src="./images/reconstructive/2oncological.jpg" alt="" class="src2"></div>
-                <div class="pic3"><img src="./images/reconstructive/3posttraumaticreconstruction.jpg" alt="" class="src2"></div>
-                <div class="pic4"><img src="./images/reconstructive/4congenitalmalformations.jpg" alt="" class="src2"></div>
-                <div class="pic5"><img src="./images/reconstructive/5harelip.jpg" alt="" class="src2"></div>
-                <div class="pic6"><img src="./images/reconstructive/6clefpalate.jpg" alt="" class="src2"></div>
-                <div class="pic7"><img src="./images/reconstructive/7angioma.jpg" alt="" class="src2"></div>
-                <div class="pic8"><img src="./images/reconstructive/8hand.jpg" alt="" class="src2"></div>
-                <div class="pic9"><img src="./images/reconstructive/9dupuyrten.jpg" alt="" class="src2"></div>
-                <div class="pic10"><img src="./images/reconstructive/10carpaltunnel.jpg" alt="" class="src2"></div>
-                <div class="pic11"><img src="./images/reconstructive/11scar.jpg" alt="" class="src2"></div>
-                <div class="pic12"><img src="./images/reconstructive/12posttumor.jpg" alt="" class="src2"></div>
-                <div class="pic13"><img src="./images/reconstructive/13nasogenianflag.jpg" alt="" class="src2"></div>
-                <div class="pic14"><img src="./images/reconstructive/14skin.jpg" alt="" class="src2"></div>
+                <div class="pic">
+                    <img src="./images/reconstructive/1breastreconstruction.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/2oncological.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/3posttraumaticreconstruction.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/4congenitalmalformations.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/5harelip.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/6clefpalate.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/7angioma.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/8hand.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/9dupuyrten.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/10carpaltunnel.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/11scar.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/12posttumor.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/13nasogenianflag.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/reconstructive/14skin.jpg" alt="" class="src2">
+                
+                </div>
+
             </div>
 
             <a name="femalegenitalsurgery"></a>
             <div class="femalegenitalsurgery proceduresdivs">
                 <h1>Female Genital Surgery</h1><br>
-                <div class="pic1"><img src="./images/Placeholders/canstockphoto10487392.jpg" alt="" class="src2"></div>
-                <div class="pic2"><img src="./images/Placeholders/konturnaya-plastika-3.jpg" alt="" class="src2"></div>
-                <div class="pic3"><img src="./images/Placeholders/Best-Nose-Job-Plastic-Surgeons-in-Chicago.jpg" alt=""
-                        class="src2"></div>
-                <div class="pic4"><img src="./images/Placeholders/plastic-surgery.jpg" alt="" class="src2"></div>
+                <div class="pic">
+                    <img src="./images/Placeholders/canstockphoto10487392.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/Placeholders/konturnaya-plastika-3.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/Placeholders/Best-Nose-Job-Plastic-Surgeons-in-Chicago.jpg" alt="" class="src2">
+                
+                </div>
+
+                <div class="pic">
+                    <img src="./images/Placeholders/plastic-surgery.jpg" alt="" class="src2">
+                
+                </div>
+
             </div>
 
         </div>
@@ -332,7 +644,8 @@
                         <p>Name</p>
                         <input type="text" class="txtinput">
                         <p>Message</p>
-                        <input type="text" class="txtinput2"><br>
+                        <textarea class="txtinput2"></textarea><br>
+<!--                        <a href="mailto:info@doctorcarranza.com.mx"></a> -->
                         <input type="button" class="btn5" value="send" />
                     </div>
                 </div>
@@ -351,6 +664,18 @@
         document.getElementById('side-menu').style.width = '0px';
         document.getElementById('main').style.marginLeft = '0px';
     }
+
+    $(".pic-hover-text-container").mouseenter(function (e) {
+        var $correspondingImg = $(e.target).parents(".pic").find(".src2");
+        $correspondingImg.addClass("src2-hovered");
+        console.log("message")
+    })
+
+    $(".pic-hover-text-container").mouseleave(function (e) {
+        var $correspondingImg = $(e.target).parents(".pic").find(".src2");
+        $correspondingImg.removeClass("src2-hovered");
+    })
+
 </script>
 
 <a title="Go To Top" id="scroll" style="display:none;"><span></span></a>
